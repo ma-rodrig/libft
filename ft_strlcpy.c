@@ -1,21 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/23 23:29:23 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/10 16:00:10 by marodrig         ###   ########.fr       */
+/*   Created: 2024/04/10 15:08:29 by marodrig          #+#    #+#             */
+/*   Updated: 2024/04/10 18:02:10 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	i;
+#include <stdlib.h>
+
+size_t  ft_strlcpy(char *dst, const char *src, size_t size)
+{	
+    unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
-	while (str[i])
+	j = 0;
+	while (src[j])
+	{
+		j++;
+	}
+	j = 0;
+	while ((i < (size - 1)) && src[j])
+	{
+		dst[i] = src[j];
 		i++;
-	return (i);
+		j++;
+	}
+	dst[i] = '\0';
+	return (j);
+}
+
+#include <stdio.h>
+int main(void)
+{
+    char *dst = "abc";
+    char *src = "edcba";
+    size_t size = 4;
+
+    printf("%d\n", ft_strlcpy(dst, src, size));
 }
