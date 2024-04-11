@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 15:08:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/11 18:06:34 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/11 18:07:20 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,4 @@ int main(void)
     printf("%li\n", ft_strlcpy(dst, src, size));
 	printf("%s\n", dst);
 }
+*/
