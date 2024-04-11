@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/11 09:14:37 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/11 10:15:50 by marodrig         ###   ########.fr       */
+/*   Created: 2024/04/11 10:16:36 by marodrig          #+#    #+#             */
+/*   Updated: 2024/04/11 10:26:28 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
-	if ((c >= 97) && (c <= 122))
+	if ((c >= 65) && (c <= 90))
 	{
-		c -= 32;
+		c += 32;
 	}
 	return (c);
 }
@@ -24,8 +24,8 @@ int	ft_toupper(int c)
 
 int	main(void)
 {
-	int	c = 99;
+	int	c = 67;
 
-	printf("%i\n", ft_toupper(c));
+	printf("%i\n", ft_tolower(c));
 }
 */
