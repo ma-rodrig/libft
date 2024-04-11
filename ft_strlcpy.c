@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 15:08:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/10 18:15:42 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/11 18:06:34 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 int main(void)
 {
     char dst[] = "abc";
-    char src[] = "e";
-    size_t size = 4;
+    char src[] = "easdfgh";
+    size_t size = 8;
 
     printf("%li\n", ft_strlcpy(dst, src, size));
+	printf("%s\n", dst);
 }
-*/
