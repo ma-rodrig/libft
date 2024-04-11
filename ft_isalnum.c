@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 22:32:58 by marodrig          #+#    #+#             */
-/*   Updated: 2024/03/04 17:51:36 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/11 14:29:36 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-

@@ -6,11 +6,13 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 23:29:23 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/10 16:00:10 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/11 14:11:31 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
