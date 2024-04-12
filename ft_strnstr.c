@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 18:09:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 15:25:09 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:02:24 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		while (little[j] && (big[i + j] == little[j]))
 		{
 			j++;
+			len--;
 		}
 		if (little[j] == '\0')
 		{
@@ -40,14 +41,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	char big[] = "zzbabcdefgh";
-	char little[] = "bp";
+	char big[] = "zazbabcdefgh";
+	char little[] = "ab";
 	size_t size = 5;
 
 	printf("%s\n", ft_strnstr(big, little, size));
+	printf("%s\n", strnstr(big, little, size));
 }
 */

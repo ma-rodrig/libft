@@ -6,12 +6,13 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 15:16:00 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/12 15:57:53 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #ifndef LIBFT_H
 # define LIBFT_H
