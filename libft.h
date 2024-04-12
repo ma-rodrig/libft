@@ -6,9 +6,12 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/11 14:28:43 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/12 13:49:37 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+#include <stdio.h>
 
 #ifndef LIBFT_H
 # define LIBFT_H

@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 10:27:39 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/11 14:00:43 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/12 12:13:47 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ size_t	ft_strlcat(char *dst,const char *src, size_t size)
 	dst[i] = '\0';
 	return (res);
 }
-
+/*
 #include <stdio.h>
 
 int main(void)
@@ -49,3 +49,4 @@ int main(void)
 
 	printf("%i\n", ft_strlcat(dest, src, size));
 }
+*/
