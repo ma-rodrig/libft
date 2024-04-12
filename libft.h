@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 13:49:37 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/12 15:16:00 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int				ft_tolower(int c);
 char			*ft_strdup(const char *c);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 /*
 -memset
 -bzero
@@ -37,7 +38,6 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 -strchr
 -memchr
 -memcmp
--strnstr
 -calloc 
 */
 #endif
