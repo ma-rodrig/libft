@@ -6,16 +6,16 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 15:57:53 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:57:34 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# include <stdlib.h>
+# include <stdio.h>
+# include <string.h>
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
@@ -30,13 +30,13 @@ int				ft_tolower(int c);
 char			*ft_strdup(const char *c);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
-char	*ft_strnstr(const char *big, const char *little, size_t len);
+char			*ft_strnstr(const char *big, const char *little, size_t len);
+char			*ft_strchr(const char *s, int c);
 /*
 -memset
 -bzero
 -memcpy
 -memmove
--strchr
 -memchr
 -memcmp
 -calloc 

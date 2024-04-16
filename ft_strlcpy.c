@@ -6,15 +6,15 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 15:08:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 11:59:53 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:53:02 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t  ft_strlcpy(char *dst, const char *src, size_t size)
-{	
-    unsigned int	i;
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+{
+	unsigned int	i;
 	unsigned int	j;
 
 	i = 0;

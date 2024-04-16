@@ -6,14 +6,14 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 10:27:39 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 14:49:04 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/16 14:52:21 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
 
-size_t	ft_strlcat(char *dst,const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	j;
@@ -39,7 +39,7 @@ size_t	ft_strlcat(char *dst,const char *src, size_t size)
 	dst[i] = '\0';
 	return (res);
 }
-
+/*
 #include <stdio.h>
 #include <bsd/string.h>
 int main(void)
@@ -58,3 +58,4 @@ int main(void)
 	printf("%s\n", tdest);
 	
 }
+*/
