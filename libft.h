@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/16 15:45:13 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:25:26 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
+void			*ft_memset(void *s, int c, size_t n);
 void			ft_bzero(void *s, size_t n);
 /*
--memset
 -memcpy
 -memmove
 -memchr
