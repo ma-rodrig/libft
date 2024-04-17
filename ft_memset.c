@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:49:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/16 17:48:44 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/17 12:26:37 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*str;
 
 	i = 0;
-	str = (unsigned char *)s; //para que serve
+	str = (unsigned char *)s;//para que serve
 	while (i < n)
 	{
-		str[i] = (unsigned char)c; //again why, search
+		str[i] = (unsigned char)c;//again why, search
 		i++;
 	}
 	return (s);
