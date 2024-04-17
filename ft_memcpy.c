@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:44:34 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/17 13:24:00 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/17 13:26:59 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dst);
 }
-
+/*
 int	main(void)
 {
 	char src[] = "abcdefghijklm";
@@ -44,3 +44,4 @@ int	main(void)
     printf("%s\n", dest);
     printf("%s\n", d1);
 }
+*/
