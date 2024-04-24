@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:33:51 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/17 18:58:55 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/18 14:59:52 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	dst = (unsigned char *)dest;
 	if (dst > temp)
 	{
-		while (n > 0)
+		while (n > 0 && (i >= 0))
 		{
 			dst[i] = temp[i];
 			--n;
+			i++;
 		}
 	}
 	else
@@ -44,12 +45,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 int	main(void)
 {
-	char src[] = "abcdefghijklm";
-    char dest[] = "nopqrst";
-    char s1[] = "abcdefghijklm";
-    char d1[] = "nopqrst";
-    ft_memmove(dest, src, (sizeof(char)*2));
-    memmove(d1, s1, (sizeof(char)*2));
+	char dest[] = "zabcdefghijklm";
+    char src[] = "nopqrst";
+    char d1[] = "zabcdefghijklm";
+    char s1[] = "nopqrst";
+    ft_memmove(dest, src, (sizeof(char)*5));
+    memmove(d1, s1, (sizeof(char)*5));
 
     printf("%s\n", dest);
     printf("%s\n", d1);
