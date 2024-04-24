@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:33:51 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/24 12:46:46 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/24 14:50:19 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (n--)
 		{
-			dst[n] = sce[n];
+			*dst++ = *sce++;
 		}
 	}
 	else
 	{
 		while (n--)
 		{
-			*dst++ = *sce++;
+			dst[n] = sce[n];
 		}
 	}
 	return (dst);
@@ -43,14 +43,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 /*
 int	main(void)
 {
-	char src[] = "abcdefghijklm";
-    char dest[] = "nopqrst";
-    char s1[] = "abcdefghijklm";
-    char d1[] = "nopqrst";
-    ft_memmove(dest, src, (sizeof(char)*5));
-    memmove(d1, s1, (sizeof(char)*5));
+	char src[] = "abcdefghim";
+    char dest[] = "nopt";
+    char s1[] = "abcdefghim";
+    char d1[] = "nopt";
+    ft_memmove(dest, src, 5);
+    memmove(d1, s1, 5);
 
     printf("%s\n", dest);
     printf("%s\n", d1);
-}
-*/
+}*/
