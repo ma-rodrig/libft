@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/23 16:40:37 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/24 17:42:50 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			*ft_calloc(size_t nmemb, size_t size);
 char			*strdup(const char *s);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_strjoin(char const *s1, char const *s2);
 
 
 
