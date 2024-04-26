@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 17:40:56 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/25 12:03:39 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:13:39 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,9 @@ int	main(void)
 {
 	char	s1[] = "string";
 	char	s2[] = " was joined";
+	char	join = ft_strjoin(s1, s2);
 		
-	printf("%s\n", ft_strjoin(s1, s2));	
+	printf("%s\n", join);
+	free(join);
 }
 */

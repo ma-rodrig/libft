@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 12:05:36 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/26 11:21:23 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/26 12:12:53 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,9 @@ int	main(void)
 {
 	char	s1[] = "  string trimmed here ";
 	char	set[] = " ";
+	
+	char	trim = ft_strtrim(s1, set);
 
-	printf("%s\n", ft_strtrim(s1, set));
+	printf("%s\n", trim);
+	free(trim);
 }*/
