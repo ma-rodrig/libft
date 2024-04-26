@@ -6,17 +6,16 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:49:40 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/26 13:31:48 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/26 16:02:30 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 //allocs and returns a str representing the int
 // received as an argument, negative nbrs must be handled
 
 #include "libft.h"
 
-static	int	ft_countint(int n)
+static	int	ft_count(long n)
 {
 	int	c;
 
@@ -33,33 +32,36 @@ static	int	ft_countint(int n)
 	}
 	return (c);
 }
+
 char	*ft_itoa(int n)
 {
 	int		i;
+	long	nb;
 	char	*str;
-	
-	str = malloc(sizeof(char) * (ft_countint(n) + 1));
+
+	nb = n;
+	i = ft_count(nb);
+	str = malloc(sizeof(char) * (ft_count(nb) + 1));
 	if (!str)
 		return (NULL);
-	if (n == 0)
-		str [0] = 0;
-	if (n < 0)
+	if (nb == 0)
+		str [0] = '0';
+	if (nb < 0)
 	{
-		n *= -1;
+		nb *= -1;
 		str[0] = '-';
 	}
-	i = ft_countint(n);
 	str[i] = '\0';
 	i--;
-	while (n >= 1)
+	while (nb >= 1)
 	{
-		str[i] = n % 10 + 48;
-		n /= 10;
-		i--;	
+		str[i] = nb % 10 + 48;
+		nb /= 10;
+		i--;
 	}
 	return (str);
 }
-
+/*
 int	main(void)
 {
 	int a = 12345;
@@ -73,4 +75,4 @@ int	main(void)
 	printf("c = %s\n", ft_itoa(c));
 	printf("d = %s\n", ft_itoa(d));
 	printf("e = %s\n", ft_itoa(e));
-}
+}*/
