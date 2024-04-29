@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 12:05:36 by marodrig          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/04/25 18:24:01 by marodrig         ###   ########.fr       */
-=======
-/*   Updated: 2024/04/26 12:12:53 by marodrig         ###   ########.fr       */
->>>>>>> refs/remotes/origin/main
+/*   Updated: 2024/04/29 11:19:52 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,13 +37,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	i;
 
-<<<<<<< HEAD
-	i = 0;
-	j = 0;
-	if ((s1 = '\0') || (set = '\0'))
-		return (NULL);
-	trim = malloc((sizeof(char)) * (ft_strlen(set) + 1));
-=======
 	start = 0;
 	if (!s1 || !set)
 		return (NULL);
@@ -57,7 +46,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while ((end > start) && ft_checkset(s1[end - 1], set))
 		--end;
 	trim = malloc(sizeof(char) * (end - start + 1));
->>>>>>> refs/remotes/origin/main
 	if (!trim)
 		return (NULL);
 	i = 0;
@@ -71,15 +59,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*
 int	main(void)
 {
-<<<<<<< HEAD
-	char	s1[] = "string trimmed here";
-	char	set[] = " ";
-=======
 	char	s1[] = "  string trimmed here ";
 	char	set[] = " ";
 	
 	char	trim = ft_strtrim(s1, set);
->>>>>>> refs/remotes/origin/main
 
 	printf("%s\n", trim);
 	free(trim);
