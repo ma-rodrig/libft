@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 12:05:36 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/25 15:48:57 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/25 18:24:01 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	j = 0;
+	if ((s1 = '\0') || (set = '\0'))
+		return (NULL);
 	trim = malloc((sizeof(char)) * (ft_strlen(set) + 1));
 	if (!trim)
 		return (NULL);
@@ -48,7 +50,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 int	main(void)
 {
 	char	s1[] = "string trimmed here";
-	char	set[] = "trimmed";
+	char	set[] = " ";
 
 	printf("%s\n", ft_strtrim(s1, set));
 }
