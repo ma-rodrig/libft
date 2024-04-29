@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/29 15:21:41 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/29 15:42:57 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,11 +50,6 @@ char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
-
-
-
-
-
-
+void			ft_putendl_fd(char *s, int fd);
 
 #endif

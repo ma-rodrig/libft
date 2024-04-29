@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/29 15:19:15 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/29 15:39:39 by marodrig         ###   ########.fr       */
+/*   Created: 2024/04/29 15:35:46 by marodrig          #+#    #+#             */
+/*   Updated: 2024/04/29 15:40:59 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//outputs a string to the given fd
+//same as putstr_fd but with newline
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
 }
 /*
 int	main(void)
 {
-	char	test[] = "myNameISmaria";
+	char	test[] = "myNameWAS";
 	int		fd = 1;
-	ft_putstr_fd(test, fd);
+	ft_putendl_fd(test, fd);
 	return (0);
 }
 */

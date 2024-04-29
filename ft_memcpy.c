@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:44:34 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/17 13:26:59 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/29 15:43:21 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ori;
 	unsigned char	*dst;
 
