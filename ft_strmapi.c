@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:07:19 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/26 18:31:27 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/29 14:27:42 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,30 +19,33 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 	unsigned int	i;
 
-	i = 0;
 	if (!s)
 		return (NULL);
-	str = malloc((sizeof(char)) * (ft_strlen(s) + 1));
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!str)
 		return (NULL);
+	i = 0;
 	while (s[i])
 	{
-		str[i] = (*f)(i, str[i]);
+		str[i] = (*f)(i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
-	return (str);	
+	return (str);
 }
-
-char ft_f(unsigned int i, char c)
+/*
+char	ft_f(unsigned int i, char c)
 {
     if (i % 2 == 0)
-        return (c - 32);
+        return (ft_toupper(c));
     else
-        return (c);
+        return (ft_tolower(c));
 }
 
 int main(void)
 {
-	printf("%s\n", ft_strmapi("Hello, World!", ft_f);
+	char *result = ft_strmapi("Hello, World!", ft_f);
+	printf("%s\n", result);
+	free(result);
 }
+*/
