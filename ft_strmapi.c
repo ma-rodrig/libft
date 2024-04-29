@@ -6,11 +6,11 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:07:19 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/29 14:27:42 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/29 15:02:36 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//applies function f to each char os str. a new str is created and returned
 
 #include "libft.h"
 
