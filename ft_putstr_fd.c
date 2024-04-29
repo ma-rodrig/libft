@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/29 15:03:23 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/29 15:20:49 by marodrig         ###   ########.fr       */
+/*   Created: 2024/04/29 15:19:15 by marodrig          #+#    #+#             */
+/*   Updated: 2024/04/29 15:21:24 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//outputs the char 'c' to the given file descriptor
-//fd: file descriptor on wich to write. is an integer number that uniquely 
-//represents an opened file for the process
+//outputs a string to the given fd
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, &c, 1);
+	
 }
-/*
-int	main(void)
-{
-	char	test = 'M';
-	int		fd = 1;
-	ft_putchar_fd(test, fd);
-	return (0);
-}
-*/
