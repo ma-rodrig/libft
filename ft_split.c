@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:53:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/29 17:58:44 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:05:41 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 //the char as a delimeter. the array must end with a NULL pointer
 
 #include "libft.h"
+
+static int 
+
+
+
 
 char	**ft_split(char const *s, char c)
 {
