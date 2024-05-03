@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_split2.0.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:53:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/03 20:17:16 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/03 20:17:36 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,11 @@ static void	free_arr(int p, char **arr)
 		free(*(arr + p));
 	}
 	free(arr);
+}
+
+char	**split(char const *s, char c)
+{
+	
 }
 
 char	**ft_split(char const *s, char c)
