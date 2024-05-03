@@ -6,11 +6,11 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/23 23:29:23 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/16 14:53:39 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/02 16:30:46 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
