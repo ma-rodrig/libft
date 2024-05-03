@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:53:13 by marodrig          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/04/30 18:05:41 by marodrig         ###   ########.fr       */
-=======
-/*   Updated: 2024/05/02 18:43:14 by marodrig         ###   ########.fr       */
->>>>>>> refs/remotes/origin/main
+/*   Updated: 2024/05/03 19:56:33 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +15,6 @@
 
 #include "libft.h"
 
-<<<<<<< HEAD
-static int 
-
-
-
-=======
 static int	count_words(const char *s, char c)
 {
 	int	i;
@@ -68,7 +58,6 @@ static void	free_arr(int p, char **arr)
 	}
 	free(arr);
 }
->>>>>>> refs/remotes/origin/main
 
 char	**ft_split(char const *s, char c)
 {
