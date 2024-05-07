@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/29 17:53:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/03 20:18:08 by marodrig         ###   ########.fr       */
+/*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
+/*   Updated: 2024/05/07 14:14:56 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,30 +59,21 @@ static void	free_arr(int p, char **arr)
 	free(arr);
 }
 
-char	**ft_split(char const *s, char c)
+char	*split(char *s, char **arr, char c)
 {
-	char	**arr;
-	int		a;
-	int		b;
-	int		d;
-	int		e;
+	int	a;
+	int	b;
+	int	d;
 
-	e = count_words(s, c);
-	arr = malloc(sizeof(char *) * (e + 1));
-	if (!arr)
-		return (NULL);
 	a = 0;
 	d = 0;
-	while (a < e)
+	while (a < count_words(s, c))
 	{
 		if (s[d] && s[d] != c)
 		{
 			arr[a] = malloc(sizeof(char) * (count_char((char *)s + d, c) + 1));
 			if (!arr)
-			{
 				free_arr(a, arr);
-				return (NULL);
-			}
 			b = 0;
 			while (s[d] && s[d] != c)
 				arr[a][b++] = s[d++];
@@ -93,5 +84,18 @@ char	**ft_split(char const *s, char c)
 			d++;
 	}
 	arr[a] = NULL;
+	return (*arr);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+	int		e;
+
+	e = count_words(s, c);
+	arr = malloc(sizeof(char *) * (e + 1));
+	if (!arr)
+		return (NULL);
+	split((char *)s, arr, c);
 	return (arr);
 }
