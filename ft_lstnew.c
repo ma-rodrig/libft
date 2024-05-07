@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:55:46 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/07 15:03:44 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/07 15:10:25 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,14 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*lst;
 
-	lst = (t_list*)malloc(sizeof(*lst));
+	lst = (t_list *)malloc(sizeof(*lst));
 	if (!lst)
 		return (NULL);
 	lst->content = content;
 	lst->next = NULL;
 	return (lst);
 }
+/*
 static void		ft_print_result(char const *s)
 {
 	int		len;
@@ -90,4 +91,4 @@ int 			main(int argc, const char *argv[])
 		elem = check_lstnew(NULL, 0);
 	free(elem);
 	return (0);
-}
+}*/
