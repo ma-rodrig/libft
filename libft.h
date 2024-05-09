@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/07 17:17:30 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/09 17:31:06 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,7 @@ void			ft_putnbr_fd(int n, int fd);
 char			**ft_split(char const *s, char c);
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
+int				ft_lstsize(t_list *lst);
+t_list			*ft_lstlast(t_list *lst);
 
 #endif
