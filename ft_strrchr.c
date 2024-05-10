@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:58:03 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/16 15:42:41 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/09 13:53:23 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,12 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-/*
-#include <string.h>
 
+/*
 int	main(void)
 {
 	char s[] = "qwertyuio";
-	int c = '\0';
+	int c = 'r';
 
 	printf("%s\n", ft_strrchr(s, c));
 	printf("%s\n", strrchr(s, c));
