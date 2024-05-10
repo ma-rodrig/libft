@@ -6,11 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 15:19:13 by marodrig          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/05/07 11:36:24 by marodrig         ###   ########.fr       */
-=======
-/*   Updated: 2024/05/10 16:26:18 by marodrig         ###   ########.fr       */
->>>>>>> refs/remotes/origin/main
+/*   Updated: 2024/05/10 16:32:30 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +18,7 @@
 # include <string.h>
 # include <unistd.h>
 
-<<<<<<< HEAD
-typedef struct		s_list
-=======
 typedef struct s_list
->>>>>>> refs/remotes/origin/main
 {
 	void			*content;
 	struct s_list	*next;

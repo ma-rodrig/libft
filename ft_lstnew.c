@@ -3,26 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-<<<<<<< HEAD
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/07 11:38:48 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/07 11:40:32 by marodrig         ###   ########.fr       */
-=======
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:55:46 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/07 15:10:25 by marodrig         ###   ########.fr       */
->>>>>>> refs/remotes/origin/main
+/*   Updated: 2024/05/10 16:35:05 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)
-<<<<<<< HEAD
-{}
-=======
 {
 	t_list	*lst;
 
@@ -102,4 +92,3 @@ int 			main(int argc, const char *argv[])
 	free(elem);
 	return (0);
 }*/
->>>>>>> refs/remotes/origin/main

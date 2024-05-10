@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 14:21:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/10 16:25:52 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/10 16:36:57 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		ft_lstadd_back(&new_lst, node);
 		lst = lst->next;
 	}
-	return (new_lst);	
+	return (new_lst);
 }
-static t_list		*get_lst_new_elem(void *content)
+/*static t_list		*get_lst_new_elem(void *content)
 {
 	t_list	*elem;
 
@@ -181,4 +181,4 @@ int				 	main(int argc, const char *argv[])
 	free_memory_and_return(tab, 4);
 	free_memory_lst_and_return(elem);
 	return (0);
-}
+}*/
