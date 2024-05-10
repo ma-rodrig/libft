@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:33:51 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/24 14:50:19 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/10 17:14:54 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (dst < sce)
 	{
 		while (n--)
-		{
 			*dst++ = *sce++;
-		}
 	}
 	else
 	{
 		while (n--)
-		{
 			dst[n] = sce[n];
-		}
 	}
 	return (dst);
 }

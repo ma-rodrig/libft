@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 18:09:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/12 16:02:24 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/10 17:17:09 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	int	j;
 
 	if (little[0] == '\0')
-	{
 		return ((char *)big);
-	}
 	i = 0;
 	while (big[i] && (len > 0))
 	{
@@ -33,9 +31,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			len--;
 		}
 		if (little[j] == '\0')
-		{
 			return ((char *)big + i);
-		}
 		i++;
 	}
 	return (0);

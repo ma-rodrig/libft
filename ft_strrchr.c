@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 14:58:03 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/09 13:53:23 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/10 17:17:24 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (s[j] && (i >= 0))
 	{
 		if (s[i] == c)
-		{
 			return ((char *)s + i);
-		}
 		--i;
 		j++;
 	}
