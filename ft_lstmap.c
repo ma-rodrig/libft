@@ -1,54 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/09 19:16:28 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/10 16:15:55 by marodrig         ###   ########.fr       */
+/*   Created: 2024/05/10 14:21:30 by marodrig          #+#    #+#             */
+/*   Updated: 2024/05/10 16:25:52 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//deletes and frees the given node and every successor of it, using del and free
-//the ptr to the lst must be set to NULL
+//iterates lst and applies f to the content of each node (lst_addback)
+//creates a new lst resulting from succeess apps of f (lstnew)
+//del is used to delete the content of a node if needed (lstclear)
+// returns the new list
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*temp;
-	t_list	*lt;
+	t_list	*new_lst;
+	t_list	*node;
 
-	if (!lst || !del || (!*lst))
-		return ;
-	lt = *lst;
-	while (lt)
+	if (!lst || !f || !del)
+		return (NULL);
+	new_lst = NULL;
+	while (lst)
 	{
-		temp = lt->next;
-		ft_lstdelone(lt, del);
-		lt = temp;
+		node = ft_lstnew(f(lst->content));
+		if (!node)
+		{
+			ft_lstclear(&node, (*del));
+			return (NULL);
+		}
+		ft_lstadd_back(&new_lst, node);
+		lst = lst->next;
 	}
-	*lst = NULL;
+	return (new_lst);	
 }
-/*
-static void			ft_print_result(char *content)
-{
-	int		len;
-
-	len = 0;
-	while (content[len])
-		len++;
-	write(1, content, len);
-}
-
-static int	nb_free_done;
-
-static void			ft_delelem(void *content)
-{
-	free(content);
-	nb_free_done++;
-}
-
 static t_list		*get_lst_new_elem(void *content)
 {
 	t_list	*elem;
@@ -118,23 +106,35 @@ static t_list		*get_elem_lst(t_list *begin, char **tab, int i)
 	}
 	return (elem);
 }
+#include <stdio.h>
 
-static void			check_lstclear(t_list *elem)
+static void			ft_delelem(t_list *elem)
 {
 	if (elem)
-		ft_print_result((char *)elem->content);
-	else
-		ft_print_result("NULL");
-	write(1, "\n", 1);
-
+		free(elem->content);
 }
 
-	int				 main(int argc, const char *argv[])
+static void		*ft_mapelem(char *content)
+{
+	int		i;
+
+	i = 0;
+
+	while (content[i])
+	{
+		content[i] = 'y';
+		i++;
+	}
+	return (content);
+}
+int				 	main(int argc, const char *argv[])
 {
 	t_list		*elem;
 	t_list		*elem2;
 	t_list		*elem3;
 	t_list		*elem4;
+	t_list		*tmp;;
+	t_list		*list;
 	char		**tab;
 
 	if (argc == 1 || (!(tab = get_content_lst(4))))
@@ -151,25 +151,34 @@ static void			check_lstclear(t_list *elem)
 	if (!(elem4 = get_elem_lst(elem, tab, 3)))
 		return (0);
 	elem3->next = elem4;
-	nb_free_done = 0;
 	alarm(5);
 	if (atoi(argv[1]) == 1)
 	{
-		ft_lstclear(&elem3, &ft_delelem);
-		elem2->next = elem3;
-		elem4 = NULL;
-		check_lstclear(elem);
-		check_lstclear(elem2);
-		check_lstclear(elem3);
-		check_lstclear(elem4);
-		nb_free_done += '0';
-		write(1, "nb_free_done = ", 15);
-		write(1, &nb_free_done, 1);
-		free_memory_and_return(tab, 1);
+		printf("elem content = %s\n", (char *)elem->content);
+		printf("elem content = %s\n", (char *)elem2->content);
+		printf("elem content = %s\n", (char *)elem3->content);
+		printf("elem content = %s\n\n", (char *)elem4->content);
+		if (!(list = ft_lstmap(elem, (void *)&ft_mapelem, (void *)&ft_delelem)))
+		{
+			free(tab[3]);
+			free(tab);
+			free_memory_and_return(tab, 4);
+			free_memory_lst_and_return(elem);
+			return (0);
+		}
+		if (list == elem)
+			write(1, "A new list is not returned\n", 27);
+		tmp = list;
+		printf("tmp = %s elem = %s\n", (char *)tmp->content, (char *)elem->content);
+
+		while (tmp)
+		{
+			printf("tmp = %s\n", (char *)tmp->content);
+			tmp = tmp->next;
+		}
+		free_memory_lst_and_return(list);
 	}
-	else
-		free_memory_and_return(tab, 4);
+	free_memory_and_return(tab, 4);
 	free_memory_lst_and_return(elem);
 	return (0);
 }
-*/
