@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:33:51 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/10 17:14:54 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/10 18:25:11 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,35 +17,36 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*dst;
-	unsigned char	*sce;
+	void	*sce;
 
-	sce = (unsigned char *)src;
-	dst = (unsigned char *)dest;
-	if (!dst && !sce)
-		return (dst);
-	if (dst < sce)
-	{
-		while (n--)
-			*dst++ = *sce++;
-	}
+	sce = (void *)src;
+	if (!src && !dest)
+		return (dest);
+	if (src > dest)
+		ft_memcpy(dest, sce, n);
 	else
 	{
 		while (n--)
-			dst[n] = sce[n];
+			((char *)dest)[n] = ((char *)sce)[n];
 	}
-	return (dst);
+	return (dest);
 }
 /*
 int	main(void)
 {
-	char src[] = "abcdefghim";
-    char dest[] = "nopt";
-    char s1[] = "abcdefghim";
-    char d1[] = "nopt";
-    ft_memmove(dest, src, 5);
-    memmove(d1, s1, 5);
+	char s[] = {65, 66, 67, 68, 69, 0, 45};
+    char s0[] = { 0,  0,  0,  0,  0,  0, 0};
+    //char s1[] = "abcdefghim";
+    //char d1[] = "nopt";
+    int i = 0;
+	ft_memmove(s0, s, 7);
+	while (s0[i])
+	{
+		printf("%i\n", s0[i]);
+		i++;
+	}	
+    //memmove(d1, s1, 5);
 
-    printf("%s\n", dest);
-    printf("%s\n", d1);
+    
+    //printf("%s\n", d1);
 }*/

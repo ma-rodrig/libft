@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 16:56:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/22 18:01:42 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/10 18:51:50 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,25 +22,29 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	str = (unsigned char *)s;
-	while (str[i] && (i < n))
+	if (n == 1)
+		return (str);
+	while (i < n)
 	{
-		if (str[i] == c)
+		if (str[i] == (unsigned char)c)
 		{
-			return ((unsigned char *)str + i);
+			return ((void *)(str + i));
 		}
 		i++;
 	}
 	return (NULL);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
-	char s[] = "abcdefgh";
-	int	c = 'c';
-	char f[] = "abcdefgh";
-	int d = 'c';
-	char *str = ft_memchr(s, c, (sizeof(char)*5));
-	char *test = memchr(f, d, (sizeof(char)*5));
-	printf("%s\n", str);
-	printf("%s\n", test);
-}*/
+	char s[] = {0, 1, 2 ,3 ,4 ,5};
+	
+	
+	char *str = ft_memchr(s, 2, 3);
+	char *test = memchr(s, 2, 3);
+
+	printf("mine: %s\n", str);
+
+	printf("original: %s\n", test);
+	
+} */
