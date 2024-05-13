@@ -6,7 +6,7 @@
 #    By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 16:43:25 by marodrig          #+#    #+#              #
-#    Updated: 2024/05/10 17:21:15 by marodrig         ###   ########.fr        #
+#    Updated: 2024/05/13 15:43:25 by marodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS 	=	ft_isascii.c ft_isprint.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 OBJS 		= $(SRCS:.c=.o)
 BONUS_S	=	ft_lstsize.c ft_lstlast.c ft_lstadd_front.c ft_lstadd_back.c \
 			ft_lstnew.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
-BONUS_O	= $(BONUS_S:.c=.o)
+BONUS_O	=	$(BONUS_S:.c=.o)
 
 all:		$(NAME)
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 15:27:47 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/23 17:04:01 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/13 15:39:49 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,7 @@ char	*ft_strdup(const char *s)
 	if (!dest)
 		return (NULL);
 	else
-	{
 		ft_strcpy(dest, s);
-	}
 	return (dest);
 }
 /*

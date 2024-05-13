@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 17:06:12 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/24 17:40:04 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/13 14:50:58 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,24 +19,31 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	i;
+	size_t	s_len;
 
 	i = 0;
-	if (!s)
-		return (NULL);
-	sub = malloc((sizeof(char)) * (len + 1));
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (start + len > s_len)
+		len = s_len - start;
+	sub = (char *)malloc((sizeof(char)) * (len + 1));
 	if (!sub)
 		return (NULL);
-	while ((i < len) && (start < ft_strlen(s)))
+	while (s[start] && (i < len))
 		sub[i++] = s[start++];
 	sub[i] = '\0';
 	return (sub);
 }
-/*
-int	main(void)
-{
-	char s[] = "benniebananacar";
-	int start = 3;
-	int len = 8;
 
-	printf("%s\n", ft_substr(s, start, len));
-}*/
+/*  int	main(void)
+{
+	char *s = "tripouille";
+	int start = 0;
+	int len = 42000;
+
+	char *str = ft_substr(s, start, len);
+
+	printf("%s\n", str);
+	free(str);
+} */ 

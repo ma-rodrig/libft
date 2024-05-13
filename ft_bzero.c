@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:43:56 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/17 12:25:00 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/13 15:19:44 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-//memset but for 0, see wether is better 0 or '\0'
 /*
 int	main(void)
 {
