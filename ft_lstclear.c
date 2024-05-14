@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:16:28 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/14 13:01:48 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 16:02:37 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*temp;
 	t_list	*lt;
 
-	if (!lst ||(!*lst))
+	if (!lst)
 		return ;
 	lt = *lst;
 	while (lt)

@@ -6,7 +6,7 @@
 #    By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 16:43:25 by marodrig          #+#    #+#              #
-#    Updated: 2024/05/13 15:43:25 by marodrig         ###   ########.fr        #
+#    Updated: 2024/05/14 15:24:00 by marodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,4 +44,4 @@ fclean:	clean
 
 re:			fclean all
 
-.PHONY:		all clean fclean re
+.PHONY:		all clean fclean re bonus

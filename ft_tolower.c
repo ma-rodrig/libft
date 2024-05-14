@@ -6,9 +6,11 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 10:16:36 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/10 17:17:51 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 16:06:09 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

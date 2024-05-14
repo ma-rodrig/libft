@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:49:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/17 15:29:44 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 15:01:06 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,18 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-#include <string.h>
+
+/* #include <string.h>
 
 int	main(void)
 {
-	char s[] = "teste nr um";
-	char s1[] = "teste nr dois";
+	char s[] = "";
+	char s1[] = "";
 
-	ft_memset(s + 5, '?', 6*sizeof(char));
-	memset(s1 + 5, '?', 8*sizeof(char));
+	ft_memset(s + 5, '0', 1);
+	memset(s1 + 5, '0', 1);
 	
 	printf("%s\n", s);
 	printf("%s\n", s1);
 	
-}
-*/
+} */
