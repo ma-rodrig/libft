@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 14:21:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:33:41 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 13:02:22 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_lst;
 	t_list	*node;
 
-	if (!lst || !f || !del)
+	if (!lst)
 		return (NULL);
 	new_lst = NULL;
 	while (lst)

@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 14:09:55 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:32:16 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 13:02:09 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!f || !lst)
+	if (!lst)
 		return ;
 	while (lst)
 	{

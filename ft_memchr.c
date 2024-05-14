@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 16:56:02 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/10 18:51:50 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:14:20 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	str = (unsigned char *)s;
-	if (n == 1)
-		return (str);
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
@@ -37,14 +35,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 /* int	main(void)
 {
-	char s[] = {0, 1, 2 ,3 ,4 ,5};
+	char s[] = { };
 	
 	
-	char *str = ft_memchr(s, 2, 3);
-	char *test = memchr(s, 2, 3);
+	char *str = ft_memchr(s, '\0', 1);
+	char *test = memchr(s, '\0', 1);
 
 	printf("mine: %s\n", str);
 
 	printf("original: %s\n", test);
 	
-} */
+}  */

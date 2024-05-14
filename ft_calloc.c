@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 14:12:16 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:21:07 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/14 12:57:49 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,16 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset(call, 0, (nmemb * size));
 	return (call);
 }
+/* int	main(void)
+{
+	size_t nmemb = 10;
+	size_t size = 5;
+
+	int *call = ft_calloc(nmemb, size);
+	int *callo = calloc(nmemb, size);
+ 
+	printf("mine: %i\n", call[0]);
+	printf("original: %i\n", callo[0]);
+	free (call);
+	free (callo);
+} */
