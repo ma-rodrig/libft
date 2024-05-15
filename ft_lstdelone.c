@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:01:29 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:31:13 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/15 13:29:57 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	(*del)(lst->content);
 	free(lst);
 }
+

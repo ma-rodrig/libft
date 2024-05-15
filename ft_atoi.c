@@ -6,9 +6,11 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 15:16:59 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/16 14:47:51 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/15 12:51:53 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -34,3 +36,9 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * s);
 }
+/* int	main(void)
+{
+	char *nptr = "-2147483647";
+
+	printf("%d\n", ft_atoi(nptr));
+} */

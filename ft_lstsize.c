@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 15:32:56 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:35:35 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/15 13:26:01 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,16 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+
+/* int	main(void)
+{
+	t_list *lst = ft_lstnew("1234");
+	t_list *new = ft_lstnew("5678");
+
+	lst->next = new;
+	new->next = NULL;
+
+	result = ft_lstadd_back(lst, new);
+
+	printf("%);
+} */

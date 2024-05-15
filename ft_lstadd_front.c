@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 15:13:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:29:18 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/15 13:27:49 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,21 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
+
+/* int	main(void)
+{
+	t_list *lst = NULL;
+	t_list *new_node1 = ft_lstnew("node1: 123");
+	t_list *new_node2 = ft_lstnew("node2: 456");
+
+	ft_lstadd_front(&lst, new_node1);
+	ft_lstadd_front(&lst, new_node2);
+
+	t_list *current = lst;
+	while (current)
+	{
+		printf("node data: %s\n", (char *)current->content);
+		current = current->next;
+	}
+	free(current);
+} */
