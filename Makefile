@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+         #
+#    By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 16:43:25 by marodrig          #+#    #+#              #
-#    Updated: 2024/05/14 15:24:00 by marodrig         ###   ########.fr        #
+#    Updated: 2024/05/16 13:44:39 by marodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ BONUS_O	=	$(BONUS_S:.c=.o)
 all:		$(NAME)
 
 $(NAME):	$(OBJS) $(INCLUDE)
-				ar -rcs $(NAME) $(OBJS)
+				$(CC) $(CFLAGS) $(OBJS)
 
 bonus:	$(NAME) $(BONUS_O)
 			ar -rcs $(NAME) $(BONUS_O)
