@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 14:12:16 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/15 12:54:31 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 17:29:10 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*call;
 
-	if(size > 0 && (nmemb > SIZE_MAX / size))
+	if (size > 0 && (nmemb > SIZE_MAX / size))
 		return (NULL);
 	call = malloc(nmemb * size);
 	if (!call)

@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:16:28 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/15 14:12:22 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:39:21 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
-/* 
-void	ft_del(void *content)
+
+/* void	ft_del(void *content)
 {
     free(content);
 }
@@ -39,17 +39,21 @@ void	ft_del(void *content)
 int	main(void)
 {
 	t_list *lst = NULL;
-	t_list *node1 = ft_lstnew("hello");
-	ft_lstadd_front(&lst, node1);
+	t_list *node1 = ft_lstnew(ft_strdup("hello"));
+	ft_lstadd_back(&lst, node1);
 	
-	t_list *node2 = ft_lstnew("world");
+	t_list *node2 = ft_lstnew(ft_strdup("world"));
 	ft_lstadd_back(&lst, node2);
-	
+
+	t_list *ptr = lst;
+
+	while (ptr != NULL)
+	{
+		printf("%s\n", (char *)ptr->content);
+		ptr = ptr->next;
+	}
 	
 	ft_lstclear(&lst, ft_del);
 
-	if (!lst)
-		printf("lst is cleared\n");
-	else
-		printf("lst not cleared\n");
-} */
+	printf("%s\n", (char *)ft_lstlast(lst));
+}  */

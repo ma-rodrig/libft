@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 14:21:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/14 13:02:22 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 17:26:51 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,36 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
+
+/* static void	ft_del(void *content)
+{
+    free(content);
+}
+
+void	*ft_f(void *content)
+{
+	size_t	i;
+	
+	i = 0;
+	if (content == NULL)
+		return (NULL);
+	char *str = ft_strdup((char *)content);
+
+	while (str[i])
+	{
+		str[i] = ft_toupper(str[i]);
+		i++;
+	}
+	return (str);
+}
+
+int	main(void)
+{
+	t_list *lst = NULL;
+	t_list *node1 = ft_lstnew(ft_strdup("hello"));
+	ft_lstadd_back(&lst, node1);
+
+	t_list	*new_lst = ft_lstmap(lst, ft_f, ft_del);
+
+	printf("%s\n", (char *)new_lst->content);
+} */

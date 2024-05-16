@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:03:23 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/14 15:08:26 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 17:29:27 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ void	ft_putchar_fd(char c, int fd)
 	//putchar('m');
 	return (0);
 } */
-
