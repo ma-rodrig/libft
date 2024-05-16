@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 15:27:47 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 15:39:49 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 17:38:08 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ char	*ft_strdup(const char *s)
 		ft_strcpy(dest, s);
 	return (dest);
 }
-/*
+/* 
 int	main(void)
 {
-	const char src[] = "string de teste";
+	const char src[] = "";
 	char *result = ft_strdup(src); 
 
 	if (result)
@@ -51,4 +51,4 @@ int	main(void)
 		free (result);
 	}
 	return (0);
-}*/
+} */

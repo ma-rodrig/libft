@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:55:46 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/16 17:10:00 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 17:33:24 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*lst;
 
+	if (!content)
+		return (NULL);
 	lst = (t_list *)malloc(sizeof(*lst));
 	if (!lst)
 		return (NULL);

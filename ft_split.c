@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/10 17:12:25 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/16 17:51:23 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,3 +99,20 @@ char	**ft_split(char const *s, char c)
 	split((char *)s, arr, c);
 	return (arr);
 }
+
+/* int	main(void)
+{
+	char s[] = "Takes a pointer to a null-terminated string ‘s’ as input. If ‘s’
+	 is NULL, it writes the string “(null)” to the standard output
+	  (file descriptor 1).";
+
+	char **split_arr = ft_split(s, 'i');
+
+	int i = 0;
+	while (split_arr[i])
+	{
+		printf("%s\n", split_arr[i]);
+		i++;
+	}
+	
+} */
