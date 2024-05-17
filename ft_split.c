@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/16 17:51:23 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/17 14:27:59 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ char	**ft_split(char const *s, char c)
 	char	**arr;
 	int		e;
 
+	if (!s)
+		return (NULL);
 	e = count_words(s, c);
 	arr = malloc(sizeof(char *) * (e + 1));
 	if (!arr)

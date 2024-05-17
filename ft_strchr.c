@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 11:45:16 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 12:05:13 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/17 14:32:43 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ int	main(void)
 	char s[] = "tripouille";
 
 
-	printf("%s\n", ft_strchr(s, 't' + 256));
-	printf("original: %s\n", strchr(s, 't' + 256));
+	printf("%s\n", ft_strchr(s, 'i'));
+	printf("original: %s\n", strchr(s, 'i'));
 }*/

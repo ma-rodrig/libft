@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:30:57 by marodrig          #+#    #+#             */
-/*   Updated: 2024/04/29 15:01:49 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/17 14:41:24 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;
 
-	if (s && f)
+	if (!s)
+		return ;
+	i = 0;
+	while (*s)
 	{
-		i = 0;
-		while (*s)
-		{
-			f(i, s++);
-			i++;
-		}
+		f(i, s++);
+		i++;
 	}
 }
 /*
