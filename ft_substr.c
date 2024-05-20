@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 17:06:12 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/13 14:50:58 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/20 17:30:34 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_len;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	s_len = ft_strlen(s);
 	if (start >= s_len)
@@ -36,14 +38,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-/*  int	main(void)
+/* int	main(void)
 {
-	char *s = "tripouille";
-	int start = 0;
-	int len = 42000;
-
-	char *str = ft_substr(s, start, len);
+	
+	char *str = ft_substr(NULL, 5, 5);
 
 	printf("%s\n", str);
 	free(str);
-} */ 
+}  */

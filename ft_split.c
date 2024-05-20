@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/17 14:27:59 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/20 17:54:45 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static void	free_arr(int p, char **arr)
 	free(arr);
 }
 
-char	*split(char *s, char **arr, char c)
+void	split(char *s, char **arr, char c)
 {
 	int	a;
 	int	b;
@@ -84,7 +84,6 @@ char	*split(char *s, char **arr, char c)
 			d++;
 	}
 	arr[a] = NULL;
-	return (*arr);
 }
 
 char	**ft_split(char const *s, char c)
@@ -102,13 +101,11 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
-/* int	main(void)
+int	main(void)
 {
-	char s[] = "Takes a pointer to a null-terminated string ‘s’ as input. If ‘s’
-	 is NULL, it writes the string “(null)” to the standard output
-	  (file descriptor 1).";
+	char s[] = "abc sdc cdgh234";
 
-	char **split_arr = ft_split(s, 'i');
+	char **split_arr = ft_split(s, '\0');
 
 	int i = 0;
 	while (split_arr[i])
@@ -117,4 +114,4 @@ char	**ft_split(char const *s, char c)
 		i++;
 	}
 	
-} */
+}

@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:16:28 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/16 14:39:21 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/20 18:06:04 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,14 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
-	t_list	*lt;
 
-	if (!lst)
+	if (!*lst)
 		return ;
-	lt = *lst;
-	while (lt)
+	while (*lst)
 	{
-		temp = lt->next;
-		ft_lstdelone(lt, del);
-		lt = temp;
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		lst = temp;
 	}
 	*lst = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 15:13:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/15 13:27:49 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/20 18:05:07 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!lst || !new)
+	if (!new)
 		return ;
+	if (!lst)
+		*lst = new;
 	new->next = *lst;
 	*lst = new;
 }
