@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/20 17:54:45 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/21 17:16:24 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ char	**ft_split(char const *s, char c)
 	split((char *)s, arr, c);
 	return (arr);
 }
-
+/*
 int	main(void)
 {
 	char s[] = "abc sdc cdgh234";
@@ -115,3 +115,4 @@ int	main(void)
 	}
 	
 }
+*/

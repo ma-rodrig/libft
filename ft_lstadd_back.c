@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 17:32:06 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/20 18:03:17 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/21 18:08:25 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	free(current);
 } */
-
+/*
 void	ft_print_result(t_list *elem)
 {
 	int		len;
@@ -105,4 +105,4 @@ int main(int argc, const char *argv[])
 		}
 	}
 	return (0);
-}
+}*/

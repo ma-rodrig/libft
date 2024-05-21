@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 19:16:28 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/20 18:06:04 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/21 17:05:07 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		temp = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		lst = temp;
+		*lst = temp;
 	}
 	*lst = NULL;
 }
