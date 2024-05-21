@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 18:09:30 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/16 14:32:35 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/17 15:18:55 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 /* int	main(void)
 {
-	char big[30] = "aaabcabcd";
-	char little[10] = "aabc";
-	size_t size = -1;
+	char big[50] = "aaabcabcd";
+	char little[50] = "aabc";
+	size_t size = 5;
 
 	printf("%s\n", ft_strnstr(big, little, size));
 	//printf("%d\n", strnstr(big, little, size));

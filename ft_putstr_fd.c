@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:19:15 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/14 15:31:27 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/17 14:26:44 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	while (*s && s[i])
+	if (!s)
+		return ;
+	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;
