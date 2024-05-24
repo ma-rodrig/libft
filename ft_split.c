@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marodrig <marodrig@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/21 17:16:24 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/24 17:51:10 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static void	free_arr(int p, char **arr)
 	free(arr);
 }
 
-void	split(char *s, char **arr, char c)
+static void	ft_array(char *s, char **arr, char c)
 {
 	int	a;
 	int	b;
@@ -97,15 +97,15 @@ char	**ft_split(char const *s, char c)
 	arr = malloc(sizeof(char *) * (e + 1));
 	if (!arr)
 		return (NULL);
-	split((char *)s, arr, c);
+	ft_array((char *)s, arr, c);
 	return (arr);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	char s[] = "abc sdc cdgh234";
 
-	char **split_arr = ft_split(s, '\0');
+	char **split_arr = ft_split(s, ' ');
 
 	int i = 0;
 	while (split_arr[i])
@@ -114,5 +114,4 @@ int	main(void)
 		i++;
 	}
 	
-}
-*/
+} */
