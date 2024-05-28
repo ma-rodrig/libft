@@ -6,7 +6,7 @@
 /*   By: marodrig <marodrig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 14:14:50 by marodrig          #+#    #+#             */
-/*   Updated: 2024/05/24 17:51:10 by marodrig         ###   ########.fr       */
+/*   Updated: 2024/05/22 17:07:20 by marodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,12 +100,12 @@ char	**ft_split(char const *s, char c)
 	ft_array((char *)s, arr, c);
 	return (arr);
 }
-
-/* int	main(void)
+/*
+int	main(void)
 {
 	char s[] = "abc sdc cdgh234";
 
-	char **split_arr = ft_split(s, ' ');
+	char **split_arr = ft_split(s, '\0');
 
 	int i = 0;
 	while (split_arr[i])
@@ -114,4 +114,5 @@ char	**ft_split(char const *s, char c)
 		i++;
 	}
 	
-} */
+}
+*/
